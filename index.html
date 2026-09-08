@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acompanhamento Acadêmico</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            background-color: #f4f4f9;
+        }
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            max-width: 400px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .campo {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            padding: 10px 15px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        #resultado {
+            margin-top: 15px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Acompanhamento Acadêmico</h2>
+
+        <div class="campo">
+            <label for="nota1">Nota 1:</label>
+            <input id="nota1" type="number" step="0.1" min="0" max="10" placeholder="Digite a primeira nota">
+        </div>
+
+        <div class="campo">
+            <label for="nota2">Nota 2:</label>
+            <input id="nota2" type="number" step="0.1" min="0" max="10" placeholder="Digite a segunda nota">
+        </div>
+
+        <button id="btnCalcular" onclick="calcular()">Calcular</button>
+
+        <p id="resultado"></p>
+    </div>
+
+    <!-- Chamada do arquivo JS no final da página -->
+    <script src="questão1.js"></script>
+</body>
+</html>
